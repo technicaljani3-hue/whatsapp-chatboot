@@ -154,7 +154,7 @@ export default async (req) => {
         status: 200,
       });
     }
-    return new Response("Forbidden", { status: 403 });
+    return new Response("return new Response(      "Forbidden. token set: " + !!process.env.VERIFY_TOKEN + ", match: " + (url.searchParams.get("hub.verify_token") === process.env.VERIFY_TOKEN),      { status: 403 }    );", { status: 403 });
   }
 
   // Incoming WhatsApp messages
